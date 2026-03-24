@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Руденко Дмитрий (Рыба-Ёж) — разработчик, программист и AI-инженер</title>
+  <title>Руденко Дмитрий (Рыба-Ёж) — разработчик, AI-инженер, создатель сложных систем</title>
   <meta name="description" content="Руденко Дмитрий, также известный как Рыба-Ёж (Ryba Yozh) — разработчик, программист и AI-инженер. Java, Python, C++, C#, JavaScript, AI, Minecraft моды, лаунчеры, боты, автоматизация и кибербезопасность." />
   <meta name="keywords" content="Руденко Дмитрий, Дмитрий Руденко, Рыба-Ёж, Рыба Ёж, Ryba Yozh, Dmitriy Rudenko, Dmitry Rudenko, разработчик, программист, AI-инженер, Java, Python, C++, C#, JavaScript, Minecraft моды, лаунчер, боты, автоматизация, кибербезопасность" />
   <meta name="author" content="Дмитрий Руденко" />
@@ -12,771 +11,470 @@
   <link rel="canonical" href="https://puffer-afk.github.io/ryba-yozhUSE/" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Руденко Дмитрий (Рыба-Ёж) — разработчик, программист и AI-инженер" />
+  <meta property="og:title" content="Руденко Дмитрий (Рыба-Ёж) — разработчик, AI-инженер, создатель сложных систем" />
   <meta property="og:description" content="Официальная страница Дмитрия Руденко, также известного как Рыба-Ёж: разработка, AI, Minecraft моды, лаунчеры, боты, автоматизация и кибербезопасность." />
   <meta property="og:url" content="https://puffer-afk.github.io/ryba-yozhUSE/" />
   <meta property="og:site_name" content="Руденко Дмитрий — Рыба-Ёж" />
   <meta property="og:locale" content="ru_RU" />
-  <meta name="theme-color" content="#0c1110" />
-
-  <style>
-    :root {
-      --bg-1: #09110c;
-      --bg-2: #101813;
-      --bg-3: #141a18;
-      --panel: rgba(20, 28, 24, 0.78);
-      --panel-2: rgba(16, 22, 19, 0.85);
-      --border: rgba(132, 199, 118, 0.18);
-      --text: #edf7ee;
-      --muted: #a9b9ac;
-      --soft: #7e9183;
-      --green: #74c365;
-      --green-2: #4da03f;
-      --green-3: #9af58b;
-      --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
-      --radius: 24px;
-      --maxw: 1220px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      color: var(--text);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at 15% 20%, rgba(116, 195, 101, 0.10), transparent 26%),
-        radial-gradient(circle at 85% 8%, rgba(154, 245, 139, 0.07), transparent 22%),
-        linear-gradient(180deg, #07100b 0%, #0b120f 40%, #0b100f 100%);
-      min-height: 100vh;
-      overflow-x: hidden;
-      line-height: 1.65;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px);
-      background-size: 32px 32px;
-      opacity: 0.4;
-      mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .container {
-      width: min(var(--maxw), calc(100% - 30px));
-      margin: 0 auto;
-    }
-
-    .nav {
-      position: sticky;
-      top: 0;
-      z-index: 30;
-      backdrop-filter: blur(18px);
-      background: rgba(8, 12, 10, 0.72);
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
-
-    .nav-inner {
-      width: min(var(--maxw), calc(100% - 30px));
-      margin: 0 auto;
-      min-height: 74px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      font-weight: 800;
-      letter-spacing: 0.2px;
-    }
-
-    .brand-icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 14px;
-      display: grid;
-      place-items: center;
-      background:
-        linear-gradient(180deg, rgba(116,195,101,0.25), rgba(77,160,63,0.18));
-      border: 1px solid rgba(154,245,139,0.20);
-      box-shadow: 0 0 30px rgba(116,195,101,0.18);
-      font-size: 20px;
-    }
-
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .nav-links a {
-      color: var(--muted);
-      font-size: 14px;
-      padding: 10px 14px;
-      border-radius: 999px;
-      transition: 0.2s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--text);
-      background: rgba(255,255,255,0.05);
-    }
-
-    .hero {
-      padding: 88px 0 42px;
-      position: relative;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.25fr 0.75fr;
-      gap: 22px;
-      align-items: stretch;
-    }
-
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(14px);
-    }
-
-    .hero-main {
-      padding: 42px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-main::after {
-      content: "";
-      position: absolute;
-      right: -40px;
-      bottom: -60px;
-      width: 240px;
-      height: 240px;
-      border-radius: 999px;
-      background: radial-gradient(circle, rgba(116,195,101,0.15), transparent 70%);
-      filter: blur(18px);
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: rgba(116,195,101,0.08);
-      border: 1px solid rgba(154,245,139,0.15);
-      color: #d9f6d6;
-      font-size: 13px;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      margin: 0 0 16px;
-      font-size: clamp(38px, 6vw, 74px);
-      line-height: 0.96;
-      letter-spacing: -0.045em;
-      max-width: 860px;
-    }
-
-    .hero-desc {
-      margin: 0;
-      color: var(--muted);
-      font-size: 18px;
-      max-width: 840px;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 28px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 14px 18px;
-      border-radius: 16px;
-      font-weight: 700;
-      transition: 0.2s ease;
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .btn.primary {
-      background: linear-gradient(180deg, rgba(116,195,101,0.22), rgba(77,160,63,0.16));
-      box-shadow: 0 0 28px rgba(116,195,101,0.14);
-    }
-
-    .btn.secondary {
-      background: rgba(255,255,255,0.04);
-      color: var(--text);
-    }
-
-    .btn:hover {
-      transform: translateY(-1px);
-      border-color: rgba(154,245,139,0.24);
-    }
-
-    .hero-side {
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .mini {
-      padding: 18px;
-      border-radius: 18px;
-      background: rgba(255,255,255,0.035);
-      border: 1px solid rgba(255,255,255,0.05);
-    }
-
-    .mini h3 {
-      margin: 0 0 10px;
-      font-size: 18px;
-    }
-
-    .mini p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .identity {
-      background:
-        linear-gradient(180deg, rgba(116,195,101,0.08), rgba(77,160,63,0.04));
-      border: 1px solid rgba(154,245,139,0.14);
-    }
-
-    .identity small {
-      display: block;
-      color: var(--soft);
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      margin-bottom: 8px;
-      font-size: 11px;
-    }
-
-    .identity strong {
-      display: block;
-      font-size: 20px;
-      margin-bottom: 8px;
-    }
-
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 16px;
-    }
-
-    .chip {
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.06);
-      color: #d9e8d9;
-      font-size: 13px;
-    }
-
-    section {
-      padding: 16px 0;
-    }
-
-    .section-title {
-      margin: 0 0 10px;
-      font-size: clamp(28px, 4vw, 44px);
-      line-height: 1.05;
-      letter-spacing: -0.03em;
-    }
-
-    .section-subtitle {
-      margin: 0 0 24px;
-      color: var(--muted);
-      max-width: 760px;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
-
-    .panel {
-      padding: 24px;
-    }
-
-    .panel h3 {
-      margin: 0 0 10px;
-      font-size: 21px;
-      letter-spacing: -0.02em;
-    }
-
-    .panel p {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
-
-    .project-card {
-      padding: 24px;
-      position: relative;
-      overflow: hidden;
-      min-height: 220px;
-    }
-
-    .project-card::before {
-      content: "";
-      position: absolute;
-      inset: auto -30px -50px auto;
-      width: 160px;
-      height: 160px;
-      background: radial-gradient(circle, rgba(116,195,101,0.14), transparent 70%);
-      border-radius: 999px;
-    }
-
-    .project-card h3 {
-      margin: 0 0 10px;
-      font-size: 23px;
-      letter-spacing: -0.02em;
-    }
-
-    .project-card p {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    .minecraft-panel {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .minecraft-panel::after {
-      content: "";
-      position: absolute;
-      right: 18px;
-      top: 18px;
-      width: 64px;
-      height: 64px;
-      background:
-        linear-gradient(90deg, rgba(116,195,101,0.20) 50%, rgba(116,195,101,0.06) 50%),
-        linear-gradient(rgba(116,195,101,0.20) 50%, rgba(116,195,101,0.06) 50%);
-      background-size: 16px 16px;
-      border-radius: 10px;
-      opacity: 0.5;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06);
-    }
-
-    .list {
-      display: grid;
-      gap: 12px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .list li {
-      padding: 14px 16px;
-      border-radius: 16px;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.05);
-      color: var(--muted);
-    }
-
-    .list b {
-      color: var(--text);
-    }
-
-    .links-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .link-box {
-      padding: 22px;
-      border-radius: 20px;
-      background: rgba(255,255,255,0.035);
-      border: 1px solid rgba(255,255,255,0.06);
-      transition: 0.2s ease;
-    }
-
-    .link-box:hover {
-      transform: translateY(-2px);
-      border-color: rgba(154,245,139,0.24);
-      box-shadow: 0 0 32px rgba(116,195,101,0.10);
-    }
-
-    .link-box small {
-      display: block;
-      margin-bottom: 8px;
-      color: var(--soft);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-size: 11px;
-    }
-
-    .link-box strong {
-      display: block;
-      font-size: 19px;
-      margin-bottom: 6px;
-    }
-
-    .link-box span {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .quote {
-      padding: 30px;
-      text-align: center;
-      font-size: clamp(22px, 3vw, 32px);
-      line-height: 1.28;
-      letter-spacing: -0.03em;
-    }
-
-    .seo-block {
-      margin-top: 20px;
-      color: #6f856f;
-      font-size: 12px;
-      line-height: 1.9;
-      opacity: 0.88;
-    }
-
-    .footer {
-      padding: 34px 0 70px;
-      color: var(--soft);
-      text-align: center;
-      font-size: 14px;
-    }
-
-    @media (max-width: 1080px) {
-      .hero-grid,
-      .grid-3,
-      .grid-2,
-      .projects,
-      .links-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .nav-links {
-        display: none;
-      }
-
-      .hero-main,
-      .hero-side,
-      .panel,
-      .project-card {
-        padding: 22px;
-      }
-
-      .hero {
-        padding-top: 58px;
-      }
-    }
-  </style>
+  <meta name="theme-color" content="#0a0f0d" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
 
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Дмитрий Руденко",
-    "alternateName":["Рыба-Ёж","Ryba Yozh","Dmitriy Rudenko","Dmitry Rudenko"],
-    "url":"https://puffer-afk.github.io/ryba-yozhUSE/",
-    "sameAs":[
-      "https://planet-lift-924.notion.site/32de3d81c5eb80eaa992f4c7a95762be?source=copy_link",
-      "https://github.com/Puffer-afk/ryba-yozh/blob/main/README.md"
-    ],
-    "jobTitle":"Разработчик, программист, AI-инженер",
-    "description":"Дмитрий Руденко, также известный как Рыба-Ёж (Ryba Yozh), — разработчик, программист и AI-инженер, специализирующийся на создании сложных систем, нейросетей, Minecraft модов, лаунчеров, ботов, автоматизации и высокопроизводительных решений.",
-    "knowsAbout":[
-      "Java",
-      "Python",
-      "C++",
-      "C#",
-      "JavaScript",
-      "TypeScript",
-      "AI",
-      "Automation",
-      "Minecraft modding",
-      "Launchers",
-      "Bots",
-      "Cybersecurity",
-      "Pentest",
-      "ONNX",
-      "YOLO",
-      "Tauri",
-      "React"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://puffer-afk.github.io/ryba-yozhUSE/#person",
+        "name": "Дмитрий Руденко",
+        "alternateName": [
+          "Рыба-Ёж",
+          "Ryba Yozh",
+          "Dmitriy Rudenko",
+          "Dmitry Rudenko",
+          "Руденко Дмитрий"
+        ],
+        "givenName": "Дмитрий",
+        "familyName": "Руденко",
+        "url": "https://puffer-afk.github.io/ryba-yozhUSE/",
+        "mainEntityOfPage": {
+          "@id": "https://puffer-afk.github.io/ryba-yozhUSE/#website"
+        },
+        "description": "Дмитрий Руденко, также известный как Рыба-Ёж (Ryba Yozh), — разработчик, программист и AI-инженер, специализирующийся на создании сложных систем, нейросетей, Minecraft модов, лаунчеров, ботов, автоматизации и высокопроизводительных решений.",
+        "jobTitle": [
+          "Разработчик",
+          "Программист",
+          "AI-инженер",
+          "Software Developer",
+          "AI Developer"
+        ],
+        "knowsAbout": [
+          "Java",
+          "Python",
+          "C++",
+          "C#",
+          "JavaScript",
+          "TypeScript",
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Automation",
+          "Minecraft modding",
+          "Fabric",
+          "Forge",
+          "Launchers",
+          "Bots",
+          "Cybersecurity",
+          "Pentest",
+          "ONNX",
+          "YOLO",
+          "Tauri",
+          "React",
+          "UI/UX"
+        ],
+        "sameAs": [
+          "https://planet-lift-924.notion.site/32de3d81c5eb80eaa992f4c7a95762be?source=copy_link",
+          "https://github.com/Puffer-afk/ryba-yozh",
+          "https://puffer-afk.github.io/ryba-yozhUSE/",
+          "https://t.me/arbuzdik",
+          "https://t.me/TopHedgehogFish",
+          "https://vk.com/arbyzdi"
+        ],
+        "worksFor": [
+          {
+            "@type": "Organization",
+            "name": "TopkaProduct"
+          },
+          {
+            "@type": "Organization",
+            "name": "Britva Client"
+          }
+        ],
+        "hasOccupation": [
+          {
+            "@type": "Occupation",
+            "name": "Software Developer"
+          },
+          {
+            "@type": "Occupation",
+            "name": "AI Developer"
+          },
+          {
+            "@type": "Occupation",
+            "name": "Minecraft Developer"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://puffer-afk.github.io/ryba-yozhUSE/#website",
+        "url": "https://puffer-afk.github.io/ryba-yozhUSE/",
+        "name": "Руденко Дмитрий (Рыба-Ёж) — разработчик, AI-инженер, создатель сложных систем",
+        "description": "Официальная страница Дмитрия Руденко, также известного как Рыба-Ёж.",
+        "inLanguage": "ru",
+        "about": {
+          "@id": "https://puffer-afk.github.io/ryba-yozhUSE/#person"
+        }
+      }
     ]
   }
   </script>
 </head>
 <body>
-  <nav class="nav">
-    <div class="nav-inner">
-      <div class="brand">
-        <div class="brand-icon">🟩</div>
-        <div>Руденко Дмитрий — Рыба-Ёж</div>
-      </div>
-      <div class="nav-links">
+  <div class="site-bg"></div>
+  <div class="grid-glow"></div>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark"></span>
+        <span class="brand-text">Рыба-Ёж</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="nav">
         <a href="#about">Обо мне</a>
+        <a href="#focus">Фокус</a>
         <a href="#projects">Проекты</a>
         <a href="#stack">Стек</a>
         <a href="#links">Ссылки</a>
-      </div>
-    </div>
-  </nav>
-
-  <header class="hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-main card">
-          <div class="eyebrow">Minecraft vibe • AI • Performance • Security</div>
-          <h1>Руденко Дмитрий<br>(Рыба-Ёж)</h1>
-          <p class="hero-desc">
-            Руденко Дмитрий, также известный под псевдонимом <b>Рыба-Ёж</b> (<b>Ryba Yozh</b>),
-            — программист, разработчик программного обеспечения и AI-инженер,
-            специализирующийся на создании сложных систем, нейросетей,
-            Minecraft-модов, лаунчеров, ботов, автоматизации и высокопроизводительных решений.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn primary" href="https://planet-lift-924.notion.site/32de3d81c5eb80eaa992f4c7a95762be?source=copy_link" target="_blank" rel="noopener noreferrer">Открыть Notion</a>
-            <a class="btn secondary" href="https://github.com/Puffer-afk/ryba-yozh/blob/main/README.md" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a class="btn secondary" href="https://puffer-afk.github.io/ryba-yozhUSE/" target="_blank" rel="noopener noreferrer">Ссылка на сайт</a>
-          </div>
-        </div>
-
-        <aside class="hero-side card">
-          <div class="mini identity">
-            <small>Основная информация</small>
-            <strong>Дмитрий Руденко</strong>
-            <p>Псевдоним: Рыба-Ёж / Ryba Yozh</p>
-            <div class="chips">
-              <div class="chip">Java</div>
-              <div class="chip">Python</div>
-              <div class="chip">C++</div>
-              <div class="chip">C#</div>
-              <div class="chip">JavaScript</div>
-              <div class="chip">AI</div>
-              <div class="chip">Cybersecurity</div>
-            </div>
-          </div>
-
-          <div class="mini">
-            <h3>Фокус</h3>
-            <p>Сложные продукты, AI, игровые решения, оптимизация и нестандартная инженерия.</p>
-          </div>
-
-          <div class="mini">
-            <h3>Направления</h3>
-            <p>Minecraft моды, лаунчеры, боты, автоматизация, веб-безопасность и высокопроизводительные системы.</p>
-          </div>
-        </aside>
-      </div>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">Обо мне</h2>
-        <p class="section-subtitle">
-          Дмитрий Руденко работает на пересечении программирования, искусственного интеллекта,
-          игровых технологий, автоматизации и кибербезопасности. Под именем Рыба-Ёж публикуются
-          проекты, ориентированные на производительность, качество исполнения и сильную техническую базу.
-        </p>
+  <main id="top">
+    <section class="hero section">
+      <div class="wrap hero-grid">
+        <div class="hero-copy glass reveal">
+          <div class="label">Разработчик • AI-инженер • Minecraft / Automation / Security</div>
+          <h1>Руденко Дмитрий<br><span>(Рыба-Ёж)</span></h1>
+          <p class="hero-text">
+            Руденко Дмитрий, также известный под псевдонимом <b>Рыба-Ёж</b> (<b>Ryba Yozh</b>), —
+            программист, разработчик программного обеспечения и AI-инженер, специализирующийся
+            на создании сложных систем, нейросетей, Minecraft-модов, лаунчеров, ботов,
+            автоматизации и высокопроизводительных решений.
+          </p>
 
-        <div class="grid-3">
-          <div class="panel card minecraft-panel">
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://planet-lift-924.notion.site/32de3d81c5eb80eaa992f4c7a95762be?source=copy_link" target="_blank" rel="noopener noreferrer">Открыть Notion</a>
+            <a class="btn btn-secondary" href="https://github.com/Puffer-afk/ryba-yozh" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn btn-secondary" href="https://t.me/arbuzdik" target="_blank" rel="noopener noreferrer">Telegram</a>
+          </div>
+        </div>
+
+        <div class="hero-side reveal">
+          <div class="identity-card glass">
+            <div class="identity-visual">
+              <div class="pixel-orb">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+            <div class="identity-meta">
+              <div class="identity-kicker">Основная сущность</div>
+              <div class="identity-name">Дмитрий Руденко</div>
+              <div class="identity-alias">Рыба-Ёж / Ryba Yozh</div>
+            </div>
+
+            <div class="pill-row">
+              <span class="pill">Java</span>
+              <span class="pill">Python</span>
+              <span class="pill">C++</span>
+              <span class="pill">C#</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">AI</span>
+              <span class="pill">Security</span>
+            </div>
+          </div>
+
+          <div class="mini-grid">
+            <div class="mini-card glass">
+              <div class="mini-title">Направление</div>
+              <div class="mini-value">Сложные продукты</div>
+            </div>
+            <div class="mini-card glass">
+              <div class="mini-title">Фокус</div>
+              <div class="mini-value">Производительность</div>
+            </div>
+            <div class="mini-card glass">
+              <div class="mini-title">Сильная сторона</div>
+              <div class="mini-value">Нестандартные решения</div>
+            </div>
+            <div class="mini-card glass">
+              <div class="mini-title">Стиль</div>
+              <div class="mini-value">Премиальный UI/UX</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-kicker">Позиционирование</div>
+          <h2>Обо мне</h2>
+          <p>
+            Дмитрий Руденко работает на пересечении программирования, искусственного интеллекта,
+            игровых технологий, автоматизации и кибербезопасности. Под именем Рыба-Ёж создаются
+            проекты, ориентированные на качество, глубину реализации, скорость и техническую силу.
+          </p>
+        </div>
+
+        <div class="about-layout">
+          <article class="feature-card glass reveal">
+            <div class="feature-index">01</div>
             <h3>AI и интеллектуальные системы</h3>
             <p>
-              Разработка сложных AI-моделей, логики поведения, автоматизации и прикладных
-              решений для реальных технических задач.
+              Разработка продвинутых AI-решений, логики поведения, автоматизации, анализа данных
+              и прикладных моделей под реальные задачи и нестандартные сценарии.
             </p>
-          </div>
+          </article>
 
-          <div class="panel card minecraft-panel">
+          <article class="feature-card glass reveal">
+            <div class="feature-index">02</div>
             <h3>Minecraft и игровые технологии</h3>
             <p>
-              Создание модов, клиентов, лаунчеров, интерфейсов и нестандартных игровых систем
-              с упором на плавность, стиль и производительность.
+              Создание модов, клиентов, лаунчеров, интерфейсов и внутриигровых систем
+              с акцентом на производительность, визуальный уровень и UX.
             </p>
-          </div>
+          </article>
 
-          <div class="panel card minecraft-panel">
+          <article class="feature-card glass reveal">
+            <div class="feature-index">03</div>
             <h3>Кибербезопасность</h3>
             <p>
               Тестирование сайтов, поиск уязвимостей, pentest, анализ веб-приложений
-              и улучшение защиты цифровых систем.
+              и улучшение устойчивости цифровых систем.
             </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="focus">
+      <div class="wrap focus-grid">
+        <div class="focus-copy reveal">
+          <div class="section-kicker">Подход</div>
+          <h2>Фокус на сильной инженерии</h2>
+          <p>
+            Основной стиль работы — продуманные, быстрые и технологически сильные решения,
+            где важны архитектура, отклик, визуальная чистота и отсутствие поверхностной реализации.
+          </p>
+        </div>
+
+        <div class="focus-cards">
+          <div class="focus-card glass reveal">
+            <h3>Высокая производительность</h3>
+            <p>Оптимизация логики, рендера, нагрузки и общей отзывчивости систем.</p>
+          </div>
+          <div class="focus-card glass reveal">
+            <h3>Сильный UI/UX</h3>
+            <p>Современные интерфейсы, плавность, глубина деталей и премиальное ощущение продукта.</p>
+          </div>
+          <div class="focus-card glass reveal">
+            <h3>Нестандартные решения</h3>
+            <p>Работа не по шаблону, а под задачу, с акцентом на уникальную реализацию.</p>
+          </div>
+          <div class="focus-card glass reveal">
+            <h3>Медийность и развитие</h3>
+            <p>Формирование аудитории, публикация проектов и развитие личного бренда разработчика.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projects">
-      <div class="container">
-        <h2 class="section-title">Проекты</h2>
-        <p class="section-subtitle">
-          Основной стиль работы — быстрые, продуманные и технологически сильные решения
-          с упором на глубину реализации.
-        </p>
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-kicker">Проекты</div>
+          <h2>Ключевые направления и продукты</h2>
+          <p>
+            Основной фокус — сложные, быстрые и продуманные решения с высоким уровнем исполнения.
+          </p>
+        </div>
 
-        <div class="projects">
-          <article class="project-card card">
+        <div class="project-grid">
+          <article class="project-card glass reveal">
+            <div class="project-tag">AI / Combat Logic</div>
             <h3>TopkaPvP-AI</h3>
             <p>
               Продвинутый AI-проект, ориентированный на сложную игровую логику,
-              поведенческие механики, автоматизацию и интеллектуальные действия.
+              поведенческие модели, автоматизацию и интеллектуальные механики.
             </p>
           </article>
 
-          <article class="project-card card">
+          <article class="project-card glass reveal">
+            <div class="project-tag">Launcher / UX / Performance</div>
             <h3>PuffLauncher</h3>
             <p>
               Современный быстрый лаунчер с акцентом на производительность,
-              плавный UX, чистую структуру и премиальный визуальный подход.
+              плавный интерфейс, чистую структуру и сильный визуальный стиль.
             </p>
           </article>
 
-          <article class="project-card card">
+          <article class="project-card glass reveal">
+            <div class="project-tag">Minecraft / Mods / Client</div>
             <h3>Minecraft-моды и клиенты</h3>
             <p>
               Разработка модификаций, клиентских решений, GUI и игровых систем
-              с акцентом на качество, детализацию и оптимизацию.
+              с упором на качество реализации, оптимизацию и детали.
             </p>
           </article>
 
-          <article class="project-card card">
+          <article class="project-card glass reveal">
+            <div class="project-tag">Bots / Automation / Tools</div>
             <h3>Боты и автоматизация</h3>
             <p>
-              Создание логических систем, ботов, утилит и инструментов автоматизации
-              под нестандартные сценарии и реальные задачи.
+              Создание логических систем, прикладных утилит, ботов и инструментов автоматизации
+              под реальные задачи и нестандартные кейсы.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="stack">
-      <div class="container">
-        <h2 class="section-title">Технологии и стек</h2>
-        <p class="section-subtitle">
-          Широкий стек технологий для разработки AI-систем, игровых решений,
-          клиентов, desktop-приложений и инструментов автоматизации.
-        </p>
+    <section class="section" id="stack">
+      <div class="wrap stack-layout">
+        <div class="stack-copy reveal">
+          <div class="section-kicker">Технологии</div>
+          <h2>Стек и компетенции</h2>
+          <p>
+            Широкий стек технологий для AI-систем, игровых решений, backend-логики,
+            desktop-приложений и инженерной автоматизации.
+          </p>
+        </div>
 
-        <div class="grid-2">
-          <div class="panel card">
-            <h3>Языки и инструменты</h3>
-            <ul class="list">
-              <li><b>Java</b> — основной язык для сложных систем, модов и клиентской логики</li>
-              <li><b>Python</b> — AI, автоматизация, обработка данных и прикладные модели</li>
-              <li><b>C++ / C#</b> — системные и высокопроизводительные решения</li>
-              <li><b>JavaScript / TypeScript</b> — интерфейсы, фронтенд и UI-логика</li>
+        <div class="stack-panels">
+          <div class="stack-card glass reveal">
+            <h3>Языки</h3>
+            <ul>
+              <li>Java</li>
+              <li>Python</li>
+              <li>C++</li>
+              <li>C#</li>
+              <li>JavaScript / TypeScript</li>
             </ul>
           </div>
 
-          <div class="panel card">
-            <h3>Направления</h3>
-            <ul class="list">
-              <li><b>ONNX / YOLO</b> — нейросети и прикладной AI</li>
-              <li><b>Fabric / Forge</b> — Minecraft-разработка</li>
-              <li><b>Tauri / React</b> — современные desktop и UI-решения</li>
-              <li><b>Security / Pentest</b> — тестирование сайтов и анализ защиты</li>
+          <div class="stack-card glass reveal">
+            <h3>AI и данные</h3>
+            <ul>
+              <li>ONNX</li>
+              <li>YOLO</li>
+              <li>Automation</li>
+              <li>Logic Systems</li>
+              <li>Behavior Models</li>
+            </ul>
+          </div>
+
+          <div class="stack-card glass reveal">
+            <h3>Игровая разработка</h3>
+            <ul>
+              <li>Fabric</li>
+              <li>Forge</li>
+              <li>Client Systems</li>
+              <li>Launchers</li>
+              <li>Custom UI</li>
+            </ul>
+          </div>
+
+          <div class="stack-card glass reveal">
+            <h3>Прочее</h3>
+            <ul>
+              <li>Tauri</li>
+              <li>React</li>
+              <li>Security</li>
+              <li>Pentest</li>
+              <li>Performance Tuning</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container">
-        <div class="quote card">
-          «Сильный продукт — это не просто код. Это производительность, архитектура,
-          визуальный уровень и инженерное мышление в каждой детали.»
+    <section class="section quote-section">
+      <div class="wrap">
+        <div class="quote-card glass reveal">
+          <p>
+            Сильный продукт — это не просто рабочий код. Это архитектура, производительность,
+            визуальный уровень и инженерное мышление в каждой детали.
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="links">
-      <div class="container">
-        <h2 class="section-title">Ссылки</h2>
-        <p class="section-subtitle">
-          Основные площадки, связанные с личным брендом Рыба-Ёж / Дмитрий Руденко.
-        </p>
+    <section class="section" id="links">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-kicker">Площадки</div>
+          <h2>Основные ссылки</h2>
+          <p>
+            Публичные точки присутствия, связанные с личным брендом Рыба-Ёж / Дмитрий Руденко.
+          </p>
+        </div>
 
         <div class="links-grid">
-          <a class="link-box card" href="https://planet-lift-924.notion.site/32de3d81c5eb80eaa992f4c7a95762be?source=copy_link" target="_blank" rel="noopener noreferrer">
-            <small>Статья</small>
+          <a class="link-card glass reveal" href="https://planet-lift-924.notion.site/32de3d81c5eb80eaa992f4c7a95762be?source=copy_link" target="_blank" rel="noopener noreferrer">
+            <span class="link-type">Статья</span>
             <strong>Notion</strong>
-            <span>Основная страница с описанием, биографией и дополнительной информацией</span>
+            <em>Основная страница с биографией, позиционированием и описанием.</em>
           </a>
 
-          <a class="link-box card" href="https://github.com/Puffer-afk/ryba-yozh/blob/main/README.md" target="_blank" rel="noopener noreferrer">
-            <small>Код и профиль</small>
+          <a class="link-card glass reveal" href="https://github.com/Puffer-afk/ryba-yozh" target="_blank" rel="noopener noreferrer">
+            <span class="link-type">Код и профиль</span>
             <strong>GitHub</strong>
-            <span>README, репозитории, проекты и техническая активность</span>
+            <em>README, репозитории, проекты и техническая активность.</em>
           </a>
 
-          <a class="link-box card" href="https://puffer-afk.github.io/ryba-yozhUSE/" target="_blank" rel="noopener noreferrer">
-            <small>Публичная страница</small>
+          <a class="link-card glass reveal" href="https://puffer-afk.github.io/ryba-yozhUSE/" target="_blank" rel="noopener noreferrer">
+            <span class="link-type">Сайт</span>
             <strong>Website</strong>
-            <span>Основной сайт-профиль с SEO-структурой и быстрым доступом</span>
+            <em>Основная визитка с SEO-структурой и единым позиционированием.</em>
+          </a>
+
+          <a class="link-card glass reveal" href="https://t.me/arbuzdik" target="_blank" rel="noopener noreferrer">
+            <span class="link-type">Контакт</span>
+            <strong>Telegram</strong>
+            <em>Личный Telegram для связи и коммуникации.</em>
+          </a>
+
+          <a class="link-card glass reveal" href="https://t.me/TopHedgehogFish" target="_blank" rel="noopener noreferrer">
+            <span class="link-type">Канал</span>
+            <strong>Telegram Channel</strong>
+            <em>Публичный канал и дополнительная медийность.</em>
+          </a>
+
+          <a class="link-card glass reveal" href="https://vk.com/arbyzdi" target="_blank" rel="noopener noreferrer">
+            <span class="link-type">Соцсеть</span>
+            <strong>VK</strong>
+            <em>Дополнительная публичная площадка и профиль.</em>
           </a>
         </div>
 
-        <div class="seo-block">
-          Руденко Дмитрий • Дмитрий Руденко • Руденко Дмитрий разработчик • Дмитрий Руденко разработчик •
-          Руденко Дмитрий программист • Дмитрий Руденко программист • Рыба-Ёж • Рыба Ёж • Ryba Yozh •
-          Dmitriy Rudenko • Dmitry Rudenko • Ryba Yozh developer • Dmitriy Rudenko developer •
-          Dmitry Rudenko programmer • разработчик Minecraft • AI-инженер • Java разработчик •
-          Python разработчик • создатель лаунчеров • разработчик ботов • кибербезопасность • pentest
+        <div class="seo-strip reveal">
+          Руденко Дмитрий • Дмитрий Руденко • Руденко Дмитрий разработчик • Дмитрий Руденко разработчик • Руденко Дмитрий программист • Дмитрий Руденко программист • Рыба-Ёж • Рыба Ёж • Ryba Yozh • Dmitriy Rudenko • Dmitry Rudenko • Ryba Yozh developer • Dmitriy Rudenko developer • Dmitry Rudenko programmer • разработчик Minecraft • AI-инженер • Java разработчик • Python разработчик • создатель лаунчеров • разработчик ботов • кибербезопасность • pentest
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      Руденко Дмитрий (Рыба-Ёж) — разработчик, программист и AI-инженер.
+    <div class="wrap footer-inner">
+      <div>Руденко Дмитрий (Рыба-Ёж) — разработчик, программист и AI-инженер.</div>
+      <a href="#top">Наверх</a>
     </div>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
