@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://puffer-afk.github.io/ryba-yozhUSE/sitemap.xml
